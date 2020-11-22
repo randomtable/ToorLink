@@ -1,5 +1,5 @@
 apt-get install ssh -y
 apt-get install sshpass -y
 apt-get install curl -y
-curl https://raw.githubusercontent.com/randomtable/ToorLink/master/toorlink.sh > toorlink.sh
+curl https://raw.githubusercontent.com/randomtable/ToorLink/main/toorlink.sh > toorlink.sh
 chmod +x toorlink.sh
