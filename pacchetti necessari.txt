@@ -1,0 +1,4 @@
+kali-linux-core
+ssh
+sshpass
+curl
