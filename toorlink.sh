@@ -26,6 +26,10 @@ do
             echo "If you want to change addressing manually, then chose option 2"
             echo "Enter IP address:"
             read IP
+            sudo bash -c "echo 'auto lo' > /etc/network/interfaces"
+            sudo bash -c "echo 'iface lo inet loopback' >> /etc/network/interfaces"
+            sudo bash -c "echo '' >> /etc/network/interfaces"
+            sudo bash -c "echo 'allow-hotplug eth0' >> /etc/network/interfaces"
             sudo bash -c "echo '' >> /etc/network/interfaces"
             sudo bash -c "echo '# The primary network interface' >> /etc/network/interfaces"
             sudo bash -c "echo 'auto eth0' >> /etc/network/interfaces"
@@ -180,8 +184,6 @@ do
             ;;
         "Build your ISO")
             
-            exit
-            ;;
         "Quit")
             break
             ;;
