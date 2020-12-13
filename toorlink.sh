@@ -183,7 +183,8 @@ do
             exit
             ;;
         "Build your ISO")
-            
+            break
+            ;;
         "Quit")
             break
             ;;
