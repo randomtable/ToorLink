@@ -17,7 +17,7 @@ echo 'You can even build your own ISO.'
 echo "Let's begin!"
 echo ''
 PS3='Please enter your choice: '
-options=("Change IP address" "Modify interfaces" "Enable SSH on boot" "Create Packages List (Search in repository)" "View/Manage packages list" "Install packages list" "Create/Manage Machines List" "Distribute Packages" "Create a script" "Run multiple scripts" "Distribute scripts" "Create Commands List" "Run all commands" "Build your ISO" "Quit")
+options=("Change IP address" "Modify interfaces" "Enable SSH on boot" "Create Packages List (Search in repository)" "View/Manage packages list" "Install packages list" "Create/Manage Machines List" "Distribute Packages" "Create a script" "Run multiple scripts" "Distribute scripts" "Create Commands List" "Run all commands" "Select Functionalities" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -182,7 +182,30 @@ do
             done < "$input"
             exit
             ;;
-        "Build your ISO")
+        "Select Functionalities")
+            echo "This function will help you to easily install one or more functions."
+            echo "After selection, you can choose to install packages on this system with option number 6 or distribute packages through option number 8."
+            PS3='Please enter your choice: '
+options=("Select DE")
+select opt in "${options[@]}"
+do
+    case $opt in
+            "Select DE")
+            PS3='Environment Selection: '
+options=("LightDM")
+select opt in "${options[@]}"
+do
+    case $opt in
+            "LightDM")
+            echo '' > packages.txt
+            echo 'kali-desktop-e17' >> packages.txt
+            echo "Done! Now you can install your selection"
+            exit 0
+            ;;
+    esac
+done
+    esac
+done
             break
             ;;
         "Quit")
