@@ -2,7 +2,7 @@
 
 Tork is an appliance who provides an SSH VPN thanks to sshuttle software.
 
-All connections are redirected through Tor Network.
+Tork redirects all connections through Tor Network.
 
 You can download the appliance here:
 
@@ -20,7 +20,7 @@ You can install the appliance like a normal Kali Linux distribution.
 
 ## Usage:
 
-First, connect to the appliance with Live ISO or user you have created during installation, then type "/tork.sh".
+First, connect to the appliance with Live ISO credentials or user you have created during installation, then type "/tork.sh".
 
 ![connect](https://github.com/randomtable/ToorLink/blob/main/img/img-1.png)
 
