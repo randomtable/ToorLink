@@ -39,7 +39,7 @@ On your client machine, just install sshuttle software with (debian example):
 
 Once you have installed the software, you can connect to server with this command (requires root privileges):
 
-### sshuttle --dns -r username@destination 0/0 -x destination
+### sshuttle --dns -r username@tork_machine_ip 0/0 -x tork_machine_ip
 
 example
 
