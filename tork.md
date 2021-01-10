@@ -1,5 +1,10 @@
 # Tork (draft page)
 
+Based on:
+
+- Torify: https://github.com/ericpaulbishop/iptables_torify
+- Sshuttle: https://github.com/sshuttle/sshuttle
+
 Tork is an appliance who provides an SSH VPN thanks to sshuttle software.
 
 Tork redirects all connections through Tor Network.
